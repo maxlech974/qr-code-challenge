@@ -1,0 +1,54 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+  background-color: var(--light-gray);
+  font-family: 'Outfit', 'Barlow', sans-serif;
+  font-size: 16px;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 1em;
+  width: 250px;
+}
+
+.qr-code {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.qr-code img {
+  display: block;
+  width: 100%; 
+}
+
+.content {
+  margin-top: 1em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.content p {
+  color: var(--grayish-blue);
+  font-size: 15px;
+}
